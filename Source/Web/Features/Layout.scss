@@ -1,11 +1,16 @@
-@import '../styles/Settings/all';
-@import '../styles/Tools/all.scss';
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Dolittle. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+ @import '~DolittleStyles/Settings/all';
+ @import '~DolittleStyles/Tools/all';
 
 body {
-  .default_layout {
+  .default-layout {
     @extend %flex-container;
     flex-direction: column;
     padding: 0;
+    padding-left: $side-bar-expanded-width;
     height: 100vh;
   }
 }
